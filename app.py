@@ -288,7 +288,8 @@ def scan_stock(ticker, interval, period):
 
 # --- DASHBOARD UI ---
 st.title("⚡ Pro Trading Live Dashboard")
-now_time = datetime.now().strftime('%H:%M:%S')
+stockholm_tz = pytz.timezone('Europe/Stockholm')
+now_time = datetime.now(stockholm_tz).strftime('%H:%M:%S')
 st.caption(f"Flexibel Multidsram-skanning | Senaste skanning: **{now_time}**")
 
 col1, col2, col3, col4 = st.columns(4)
