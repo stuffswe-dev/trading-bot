@@ -7,6 +7,7 @@ import io
 import matplotlib.pyplot as plt
 import plotly.graph_objects as pd_go
 from datetime import datetime
+import pytz
 from streamlit_autorefresh import st_autorefresh
 
 # --- PAGE CONFIGURATION ---
